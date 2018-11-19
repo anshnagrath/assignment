@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnChanges, Input } from '@angular/core';
 
 @Component({
   selector: 'app-child2',
@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./child2.component.css']
 })
 
-export class Child2Component implements OnInit {
+export class Child2Component implements OnChanges {
   dataToRender: any;
   @Input('d') d;
 
@@ -14,7 +14,7 @@ export class Child2Component implements OnInit {
 
 
   }
-  ngOnInit() {
+  ngOnChanges() {
     console.log(this.d, 'pasaps');
     this.dataToRender = this.d;
   }
