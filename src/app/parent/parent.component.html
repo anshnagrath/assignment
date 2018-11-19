@@ -1,3 +1,6 @@
-<p>
-  parent works!
-</p>
+<div>
+  <app-child1 *ngIf="parentData" [data]="parentData" (passed)="passedData($event)" >
+</app-child1>
+<app-child2 *ngIf="child2Data" [d]="child2Data" >
+  </app-child2>
+</div>

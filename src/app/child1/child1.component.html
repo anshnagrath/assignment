@@ -1,3 +1,9 @@
-<p>
-  child1 works!
-</p>
+<div> 
+    <ul>
+        <li *ngFor = "let name of data;let i = index;"(click)="toPass(i)">{{name.name}}</li>
+        
+      </ul>
+
+
+</div>
+
